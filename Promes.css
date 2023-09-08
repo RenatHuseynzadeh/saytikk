@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ .checkbox_box input{ 
+ display: none; 
+ }
+
+.checkbox_box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.checkbox_box label{
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgb(83, 83, 83);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.checkbox_box label p{
+    font-size: 13px;
+    font-family: sans-serif;
+    color: green;
+    display: none;
+
+}
+
+.checkbox_box input:checked~label{
+    border-color: green;
+}
+
+.checkbox_box:has(input:checked) label p{
+    display: block;
+}
+
+.checkbox_box:has(input:checked) p {
+    color: green;
+    text-decoration: line-through;
+    font-family: sans-serif;
+}
+
+.box{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 7px;
+    border: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-shadow: 3px 3px 5px 0px;
+    background: rgb(0,0,0);
+background: linear-gradient(40deg, rgb(0, 255, 255) 0%, rgba(255,255,255,1) 24%);
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(34,193,195);
+background: linear-gradient(31deg, rgba(34,193,195,1) 0%, rgba(255,255,255,1) 68%);
+
+}
+
+.todoInp{
+    border-radius: 5px;
+}
+
+.addBtn{
+    border-radius: 5px;
+    border: 1px dashed black;
+    
+}
+
+.deleteBtn{
+    background-color: red;
+    border-radius: 2px;
+    border: none;
+    color: aliceblue;
+    
+}
+
